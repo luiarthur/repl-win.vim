@@ -94,8 +94,6 @@ endfunction
 " ------------------------ Maps --------------------------------------------
 nnoremap <silent> <Plug>ReplStartTermBelow :<C-U> call <SID>ReplStartTermBelow()<CR>
 nnoremap <silent> <Plug>ReplSourceFile :<C-U> call <SID>ReplSourceFile()<CR>
-
-" NOTE: The g@ is confusing. See what happens when you do `g@ + j` in vi.
 nnoremap <silent> <Plug>ReplSendDown :<C-U> call <SID>ReplSendDown('line')<CR>
 nnoremap <silent> <Plug>ReplSendRight :<C-U> call <SID>ReplSendRight('line')<CR>
 xnoremap <silent> <Plug>ReplSendDownV :<C-U> call <SID>ReplSendDown(visualmode())<CR>
@@ -106,7 +104,6 @@ xnoremap <silent> <Plug>ReplSendRightV :<C-U> call <SID>ReplSendRight(visualmode
 if !exists("g:repl_default_bindings") || g:repl_default_bindings
   nmap <C-k> <Plug>ReplStartTermBelow<CR>
   nmap <C-h> <Plug>ReplSourceFile<CR>
-
   nmap <C-l> <Plug>ReplSendRight<CR>
   xmap <C-l> <Plug>ReplSendRightV
   nmap <C-j> <Plug>ReplSendDown<CR>
