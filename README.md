@@ -1,3 +1,5 @@
+# This repo has been replaced by [luiarthur/repl.vim][1]!
+
 # repl-win.vim
 Launch REPL in VIM in native Windows (not WSL2).
 
@@ -57,6 +59,7 @@ in `~/vimfiles/vimrc` OR `g:repl_default_key_bindings` is not defined.
 - R (`*.R`)
 
 ## About
-Inspired by [vim-sendtowindow][1].
+Inspired by [vim-sendtowindow][2].
 
-[1]: https://github.com/karoliskoncevicius/vim-sendtowindow.
+[1]: https://github.com/luiarthur/repl.vim
+[2]: https://github.com/karoliskoncevicius/vim-sendtowindow.
